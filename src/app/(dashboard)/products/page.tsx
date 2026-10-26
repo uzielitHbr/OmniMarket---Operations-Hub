@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { ProductsTable } from "@/components/tables/products-table";
 
 export default function ProductsPage() {
   return (
@@ -12,21 +6,11 @@ export default function ProductsPage() {
       <div>
         <h2 className="text-2xl font-bold tracking-tight">Catálogo de Productos</h2>
         <p className="text-sm text-muted-foreground">
-          Control de inventario, SKUs, precios y costos unitarios.
+          Gestión de inventario, márgenes financieros, creación y edición de SKUs.
         </p>
       </div>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Inventario</CardTitle>
-          <CardDescription>Gestión integral de productos disponibles.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="flex h-48 items-center justify-center rounded-lg border border-dashed text-sm text-muted-foreground">
-            Módulo preparado para integración de catálogo en Fase 2 y Fase 4.
-          </div>
-        </CardContent>
-      </Card>
+      <ProductsTable />
     </div>
   );
 }
